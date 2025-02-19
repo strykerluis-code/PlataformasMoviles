@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SurveyActivity3">
+
+    <!-- Fondo de la encuesta -->
+    <ImageView
+        android:id="@+id/surveyBackground2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/survey_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- PREGUNTA PRINCIPAL -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="15dp"
+            android:text="¿Cómo calificas nuestra hospitalidad?"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+
+        <!-- AYUDA PREGUNTA -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona un opción"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="20dp"
+            android:layout_marginHorizontal="30dp"/>
+
+        <!-- Grid Layout para opciones -->
+        <GridLayout
+            android:id="@+id/options_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1"
+            android:rowCount="4"
+            android:orientation="horizontal"
+            android:paddingHorizontal="40dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/botonA"
+                android:text="(A) Buena, me sentí bienvenido y atendido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#8fc5be"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/material_dynamic_neutral_variant30"
+                android:textSize="13sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/botonB"
+                android:text="(B) Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#8fc5be"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/material_dynamic_neutral_variant30"
+                android:textSize="13sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/botonC"
+                android:text="(C) Mala, no me sentí atendido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#8fc5be"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/material_dynamic_neutral_variant30"
+                android:textSize="13sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/botonD"
+                android:text="(D) Otro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#8fc5be"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/material_dynamic_neutral_variant30"
+                android:textSize="13sp" />
+
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

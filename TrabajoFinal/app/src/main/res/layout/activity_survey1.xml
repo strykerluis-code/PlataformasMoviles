@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SurveyActivity1">
+
+    <!-- Fondo de la encuesta -->
+    <ImageView
+        android:id="@+id/surveyBackground2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/survey_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- PREGUNTA PRINCIPAL -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="15dp"
+            android:text="¿Qué ambientes visitaste durante tu estadía?"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+
+        <!-- AYUDA PREGUNTA -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Puedes escoger multiples alternativas:"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="20dp"
+            android:layout_marginHorizontal="30dp"/>
+
+        <!-- Grid Layout para opciones -->
+        <GridLayout
+            android:id="@+id/options_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:orientation="horizontal"
+            android:paddingHorizontal="30dp">
+
+            <!-- Opcion A -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="#7ecbc1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/opcion_cafe"/>
+
+                    <CheckBox
+                        android:id="@+id/checkBoxA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cafetería"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Opcion B -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="#7ecbc1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/opcion_piscina"/>
+
+                    <CheckBox
+                        android:id="@+id/checkBoxB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Piscina"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!-- Opcion C -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="#7ecbc1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/opcion_gimnasio"/>
+
+                    <CheckBox
+                        android:id="@+id/checkBoxC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gimnasio"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!-- Opcion D -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="#7ecbc1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/opcion_sala"/>
+
+                    <CheckBox
+                        android:id="@+id/checkBoxD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sala de reunión"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

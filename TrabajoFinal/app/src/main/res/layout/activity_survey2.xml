@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Fondo de la encuesta -->
+    <ImageView
+        android:id="@+id/surveyBackground2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/survey_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- PREGUNTA PRINCIPAL -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="15dp"
+            android:text="De manera general, ¿como calificaría su estadía?"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+
+        <!-- AYUDA PREGUNTA -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona un emoticón"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="20dp"
+            android:layout_marginHorizontal="30dp"/>
+
+        <!-- Grid Layout para opciones -->
+        <GridLayout
+            android:id="@+id/options_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:orientation="horizontal"
+            android:paddingHorizontal="30dp">
+
+            <!-- Opcion A -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="#7ecbc1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/boton1"
+                        android:layout_width="140dp"
+                        android:layout_height="100dp"
+                        android:text="😍"
+                        android:textSize="65sp"
+                        android:padding="1dp"
+                        android:background="#8fc5be"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textSize="17sp"
+                        android:text="¡Me encanto!"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Opcion B -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="#7ecbc1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/boton2"
+                        android:layout_width="140dp"
+                        android:layout_height="100dp"
+                        android:text="😀"
+                        android:textSize="65dp"
+                        android:padding="1dp"
+                        android:background="#8fc5be"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textSize="15sp"
+                        android:text="Me gustó"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!-- Opcion C -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="#7ecbc1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/boton3"
+                        android:layout_width="140dp"
+                        android:layout_height="100dp"
+                        android:text="😐"
+                        android:textSize="65dp"
+                        android:padding="1dp"
+                        android:background="#8fc5be"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textSize="15sp"
+                        android:text="Regular"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!-- Opcion D -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="#7ecbc1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/boton4"
+                        android:layout_width="140dp"
+                        android:layout_height="100dp"
+                        android:text="😒"
+                        android:textSize="65sp"
+                        android:padding="1dp"
+                        android:background="#8fc5be"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textSize="15sp"
+                        android:text="No me agradó"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
