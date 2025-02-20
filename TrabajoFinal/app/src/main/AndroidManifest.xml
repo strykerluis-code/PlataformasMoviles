@@ -34,7 +34,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SurveryEndActivity"
+            android:name=".SurveyEndActivity"
             android:exported="false" />
         <activity
             android:name=".RegistroActivity"

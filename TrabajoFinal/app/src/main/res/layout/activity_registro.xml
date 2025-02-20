@@ -4,6 +4,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:src="@drawable/survey_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegistroActivity"
@@ -22,12 +23,12 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_marginTop="80dp"
             android:layout_marginBottom="150dp"/>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnRegistrar"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Registrar"
-            />
+            android:background="#8fc5be"
+            android:text="Registrar"/>
 
 </LinearLayout>
