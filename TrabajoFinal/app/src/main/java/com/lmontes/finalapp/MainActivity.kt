@@ -19,9 +19,21 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         val startButton = findViewById<Button>(R.id.start_button)
+
+       /*
+
         startButton.setOnClickListener() {
             val intent = Intent(this, SurveyActivity1::class.java)
             startActivity(intent)
         }
+
+
+        */
+
+        startButton.setOnClickListener() {
+            val intent = Intent(this, ListaHabitacionesActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
