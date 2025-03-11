@@ -94,6 +94,8 @@
             android:paddingBottom="10dp" />
 
         <!-- Selección de Fechas -->
+
+
         <EditText
             android:id="@+id/fechaInicioReserva"
             android:layout_width="match_parent"

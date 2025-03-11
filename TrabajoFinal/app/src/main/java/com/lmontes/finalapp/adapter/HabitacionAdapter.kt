@@ -19,6 +19,7 @@ class HabitacionAdapter(
     class HabitacionViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val nombre: TextView = view.findViewById(R.id.nombreHabitacion)
         val descripcion: TextView = view.findViewById(R.id.descripcionHabitacion)
+        val cantidadReservas: TextView = view.findViewById(R.id.cantidadReservas) // Nuevo
         val imagen: ImageView = view.findViewById(R.id.imagenHabitacion)
     }
 
@@ -32,6 +33,8 @@ class HabitacionAdapter(
         val habitacion = listaHabitaciones[position]
         holder.nombre.text = habitacion.nombre
         holder.descripcion.text = habitacion.descripcion
+        holder.cantidadReservas.text = "Reservas: ${habitacion.reservas.size}" // Mostrar cantidad de reservas
+
         Glide.with(holder.itemView.context)
             .load(habitacion.imagenUrl)
             .placeholder(R.drawable.ic_placeholder) // Imagen de carga

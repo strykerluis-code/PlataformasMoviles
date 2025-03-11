@@ -25,7 +25,6 @@ import java.util.Locale
 class DetalleHabitacionActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_detalle_habitacion)
 
         // Referencias a los elementos de la UI
@@ -73,7 +72,7 @@ class DetalleHabitacionActivity : AppCompatActivity() {
 
 
         listaReservas.text = reservas?.joinToString("\n") {
-            "${it.nombreCliente}: ${it.fechaInicio} - ${it.fechaFin}"
+            "Reserva: ${it.fechaInicio} - ${it.fechaFin}"
         } ?: "No hay reservas registradas."
 
 

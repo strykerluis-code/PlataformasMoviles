@@ -1,6 +1,7 @@
 package com.lmontes.finalapp.data
 
 data class Habitacion(
+    val id:Int,
     val nombre: String,
     val descripcion: String,
     val imagenUrl: String,

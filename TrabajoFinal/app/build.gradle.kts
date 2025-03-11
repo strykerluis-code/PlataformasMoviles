@@ -36,6 +36,11 @@ android {
 }
 
 dependencies {
+
+    // Retrofit y GSON
+    implementation(libs.retrofit.core)
+    implementation(libs.retrofit.gson)
+
     implementation("com.github.bumptech.glide:glide:4.16.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
