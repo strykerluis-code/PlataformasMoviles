@@ -3,8 +3,8 @@ package com.lmontes.finalapp
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -12,10 +12,10 @@ import com.lmontes.finalapp.adapter.HabitacionAdapter
 import com.lmontes.finalapp.api.ApiResponse
 import com.lmontes.finalapp.api.RetrofitClient
 import com.lmontes.finalapp.data.Habitacion
-import com.lmontes.finalapp.data.Reserva
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+
 
 class ListaHabitacionesActivity : AppCompatActivity() {
 
@@ -25,6 +25,8 @@ class ListaHabitacionesActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
 
         setContentView(R.layout.activity_lista_habitaciones)
 
