@@ -10,114 +10,290 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     tools:context=".RegistroActivity"
     android:background="@color/teal_700"
     android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="56dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre"
+                    android:textSize="18dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"/>
+
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nombre"
+                    android:inputType="text"
+                    android:minHeight="35dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="55dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="56dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Apeliidos "
+                    android:textSize="18dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Apellido"
+                    android:inputType="text"
+                    android:minHeight="35dp"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginRight="55dp"/>
+       </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="56dp">
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sexo "
+                    android:textSize="18dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"/>
+
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Sexo"
+                    android:inputType="text"
+                    android:minHeight="18dp"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginLeft="55dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="56dp">
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Casado"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="70dp"/>
+
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Casado"
+                    android:inputType="text"
+                    android:minHeight="18dp"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginRight="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="56dp">
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad de hijos"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Cantidad de hijos"
+                    android:inputType="text"
+                    android:minHeight="35dp"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="56dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad de visitas"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Cantidad de visitas"
+                    android:inputType="text"
+                    android:minHeight="35dp"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginLeft=""
+                    android:layout_marginRight="45dp"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="56dp">
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="match_parent"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Nombre"
-            android:textSize="18dp" />
+            android:text="Celular"
+            android:textSize="18dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Nombre"
+            android:hint="Celular"
             android:inputType="text"
             android:minHeight="35dp"
-            android:layout_marginBottom="18dp"/>
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft=""
+            android:layout_marginRight="45dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="56dp">
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="match_parent"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Apeliidos "
-            android:textSize="18dp" />
+            android:text="Email"
+            android:textSize="18dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Apellido"
+            android:hint="Email"
             android:inputType="text"
             android:minHeight="35dp"
-            android:layout_marginBottom="18dp"/>
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft=""
+            android:layout_marginRight="45dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="56dp">
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="100dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Sexo "
-            android:textSize="18dp" />
-
-        <EditText
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Sexo"
-            android:inputType="text"
-            android:minHeight="18dp"
-            android:layout_marginBottom="30dp"/>
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Casado"
-            android:textSize="18dp" />
+            android:text="Dirección"
+            android:textSize="18dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Casado"
+            android:hint="Dirección"
             android:inputType="text"
             android:minHeight="35dp"
-            android:layout_marginBottom="30dp"/>
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft=""
+            android:layout_marginRight="45dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="56dp">
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="match_parent"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Cantidad de hijos"
-            android:textSize="18dp" />
+            android:text="Región"
+            android:textSize="18dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Cantidad de hijos"
+            android:hint="Región"
             android:inputType="text"
             android:minHeight="35dp"
-            android:layout_marginBottom="18dp"/>
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft=""
+            android:layout_marginRight="45dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="56dp">
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="350dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Cantidad de visitas"
-            android:textSize="18dp" />
+            android:text="País"
+            android:textSize="18dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Cantidad de visitas"
+            android:hint="País"
             android:inputType="text"
             android:minHeight="35dp"
-            android:layout_marginBottom="18dp"/>
+            android:layout_marginLeft=""
+            android:layout_marginRight="45dp"/>
 
-        <androidx.appcompat.widget.AppCompatButton
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnRegistrar"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:background="#8fc5be"
-            android:layout_marginBottom="30dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
             android:text="Registrar"/>
 
-
-
-
-    </LinearLayout>
+</LinearLayout>
