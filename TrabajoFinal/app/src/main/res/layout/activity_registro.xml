@@ -45,13 +45,13 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="match_parent"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="Sexo "
             android:textSize="18dp" />
 
         <EditText
-            android:layout_width="match_parent"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Sexo"
