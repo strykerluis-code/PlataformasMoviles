@@ -18,12 +18,17 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val startButton = findViewById<Button>(R.id.start_button)
+        val startButton = findViewById<Button>(R.id.btnRegistro)
 
 
 
         startButton.setOnClickListener() {
             val intent = Intent(this, SurveyActivity1::class.java)
+            startActivity(intent)
+        }
+
+        startButton.setOnClickListener() {
+            val intent = Intent(this, RegistroActivity::class.java)
             startActivity(intent)
         }
 

@@ -55,7 +55,7 @@
             android:textSize="15sp" />
 
         <Button
-            android:id="@+id/start_button"
+            android:id="@+id/btnRegistro"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -72,6 +72,16 @@
             android:text="⏳ Tomará 3 minutos"
             android:textColor="@color/material_dynamic_neutral_variant30"
             android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnRegistro"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@android:color/black"
+            android:text="Registro"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
 
     </LinearLayout>
 

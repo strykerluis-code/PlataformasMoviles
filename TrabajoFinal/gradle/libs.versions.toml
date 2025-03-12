@@ -11,6 +11,8 @@ activity = "1.10.0"
 constraintlayout = "2.2.0"
 firebaseInappmessaging = "21.0.1"
 retrofit = "2.9.0"
+volley = "1.2.1"
+gamesActivity = "4.0.0"
 
 [libraries]
 retrofit-core = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
@@ -24,6 +26,8 @@ material = { group = "com.google.android.material", name = "material", version.r
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 firebase-inappmessaging = { group = "com.google.firebase", name = "firebase-inappmessaging", version.ref = "firebaseInappmessaging" }
+volley = { group = "com.android.volley", name = "volley", version.ref = "volley" }
+androidx-games-activity = { group = "androidx.games", name = "games-activity", version.ref = "gamesActivity" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

@@ -286,14 +286,16 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 
     </LinearLayout>
 
-    <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnRegistrar"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="#8fc5be"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="5dp"
-            android:text="Registrar"/>
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@android:color/black"
+        android:text="Registrar"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_gravity="center" "/>
 
 </LinearLayout>
