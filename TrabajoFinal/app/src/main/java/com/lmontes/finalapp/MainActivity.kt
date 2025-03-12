@@ -19,7 +19,8 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         val startButton = findViewById<Button>(R.id.btnRegistro)
-
+        val startSurveyButton = findViewById<Button>(R.id.btnRegistroEncuesta)
+        val startReservaButton = findViewById<Button>(R.id.btnRegistroReserva)
 
 
         startButton.setOnClickListener() {
@@ -27,15 +28,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        startButton.setOnClickListener() {
+        startSurveyButton.setOnClickListener() {
             val intent = Intent(this, RegistroActivity::class.java)
             startActivity(intent)
         }
 
-
-
-
-        startButton.setOnClickListener() {
+        startReservaButton.setOnClickListener() {
             val intent = Intent(this, ListaHabitacionesActivity::class.java)
             startActivity(intent)
         }

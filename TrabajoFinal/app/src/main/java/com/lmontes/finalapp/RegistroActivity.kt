@@ -10,11 +10,11 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.android.volley.VolleyError
-import com.android.volley.toolbox.JsonObjectRequest
-import com.android.volley.toolbox.Volley
+//import com.android.volley.VolleyError
+//import com.android.volley.toolbox.JsonObjectRequest
+//import com.android.volley.toolbox.Volley
 import com.google.android.gms.common.api.Response
-import com.google.androidgamesdk.gametextinput.Listener
+//import com.google.androidgamesdk.gametextinput.Listener
 import org.json.JSONException
 import org.json.JSONObject
 import java.lang.reflect.Method
@@ -30,14 +30,9 @@ class RegistroActivity : AppCompatActivity() {
             insets
         }
 
-        val spinner = findViewById<Spinner>(R.id.spinner)
-        val lista = arrayOf("Nombre", "Apellido", "Sexo", "Casado", "Cantidad de hijos", "Cantidad de visitas", "Celular", "Email", "Dirección", "Región", "País")
-        val adaptador = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, lista)
-        spinner.adapter = adaptador
-
-
     }
 
+    /*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
     fun registrar(view: View) {
 
         var txtCategoria = 1
@@ -90,4 +85,8 @@ class RegistroActivity : AppCompatActivity() {
         val requestQueue = Volley.newRequestQueue(this)
         requestQueue.add(jsonObjReq)
     }
+
+   aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa  */
 }
+
+

@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
 xmlns:android="http://schemas.android.com/apk/res/android"
@@ -10,7 +11,14 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     tools:context=".RegistroActivity"
     android:background="@color/teal_700"
     android:orientation="vertical">
-        <LinearLayout
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro de usuarios"
+        android:textSize="40sp"
+        />
+    <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="56dp">
 
@@ -297,5 +305,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         android:textColor="@android:color/white"
         android:textSize="16sp"
         android:layout_gravity="center" "/>
+   aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+   -->
 
 </LinearLayout>
