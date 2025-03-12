@@ -61,17 +61,26 @@ class RegistroActivity : AppCompatActivity() {
         val txtCasado = findViewById<EditText>(R.id.txtCasado)
         val txtCantidadHijos = findViewById<EditText>(R.id.txtCantidadHijos)
         val txtCantiVisitas = findViewById<EditText>(R.id.txtCantidadVisitas)
-        val txtCantidadHijos = findViewById<EditText>(R.id.txtCantidadHijos)
+        val txtCelular = findViewById<EditText>(R.id.txtCelular)
+        val txtEmail = findViewById<EditText>(R.id.txtEmail)
+        val txtDireccion = findViewById<EditText>(R.id.txtDireccion)
+        val txtRegion = findViewById<EditText>(R.id.txtRegion)
+        val txtPais = findViewById<EditText>(R.id.txtPais)
 
         val url = "https://dfaoz0y8xk.execute-api.us-east-1.amazonaws.com/v1/cliente"
         val jsonObject = JSONObject()
         try {
             jsonObject.put("nombre", txtNombre.text.toString())
-            jsonObject.put("apellido", txtPrecio.text.toString().toFloat())
-            jsonObject.put("sexo", txtDescripcion.text.toString())
-            jsonObject.put("casado", txtStock)
-            jsonObject.put("importancia", txtImportancia)
-            jsonObject.put("imagen", txtImagen)
+            jsonObject.put("apellido", txtApellido.text.toString().toFloat())
+            jsonObject.put("sexo", txtSexo.text.toString())
+            jsonObject.put("casado", txtCasado)
+            jsonObject.put("cantidad de visitas", txtCantiVisitas)
+            jsonObject.put("cantidad de hijos", txtCantidadHijos)
+            jsonObject.put("celular", txtCelular)
+            jsonObject.put("email", txtEmail)
+            jsonObject.put("dirección", txtDireccion)
+            jsonObject.put("region", txtRegion)
+            jsonObject.put("pais", txtPais)
 
         } catch (e: JSONException) {
             Log.i("=====>", e.message.toString())
