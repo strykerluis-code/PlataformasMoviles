@@ -33,26 +33,7 @@
             android:layout_height="150dp"
             android:layout_marginBottom="30dp"
             android:src="@drawable/logo"/>
-    <!-- Mensage
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:text="¿Cómo estuvo tu estadía?"
-            android:textColor="@android:color/black"
-            android:textSize="22dp"
-            android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/subtitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:text="Ayúdanos a mejorar tu experiencia"
-            android:textColor="@color/material_dynamic_neutral_variant30"
-            android:textSize="15sp" />
-    -->
         <Button
             android:id="@+id/btnRegistroReserva"
             android:layout_width="150dp"
@@ -65,13 +46,6 @@
 
 
         <!-- Mensaje final -->
-        <TextView
-            android:id="@+id/time_estimate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="⏳ Tomará 3 minutos"
-            android:textColor="@color/material_dynamic_neutral_variant30"
-            android:textSize="13sp" />
 
         <Button
             android:id="@+id/btnRegistro"
@@ -91,6 +65,13 @@
             android:text="Iniciar Encuesta"
             android:textSize="16sp"
             android:textColor="@android:color/white" />
+        <TextView
+            android:id="@+id/time_estimate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⏳ Tomará 3 minutos"
+            android:textColor="@color/material_dynamic_neutral_variant30"
+            android:textSize="13sp" />
 
     </LinearLayout>
 

@@ -91,7 +91,7 @@
                 android:textSize="13sp" />
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/botonD"
-                android:text="(D) Otro"
+                android:text="(D) Terrible, no volvería"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#8fc5be"
